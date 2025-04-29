@@ -36,3 +36,6 @@ app.include_router(cctv.router, prefix="/cctv", tags=["CCTV"])
 app.include_router(datacenter.router, prefix="/datacenter", tags=["Data Centers"])
 app.include_router(saladecontrol.router, prefix="/saladecontrol", tags=["Salas de Control"])
 app.include_router(deteccionincendio.router, prefix="/deteccionincendio", tags=["Detección de Incendios"])
+
+from app.whatsapp_bot import router as whatsapp_router
+app.include_router(whatsapp_router, prefix="", tags=["WhatsApp"])
