@@ -38,4 +38,5 @@ app.include_router(saladecontrol.router, prefix="/saladecontrol", tags=["Salas d
 app.include_router(deteccionincendio.router, prefix="/deteccionincendio", tags=["Detección de Incendios"])
 
 from app.whatsapp_bot import router as whatsapp_router
+
 app.include_router(whatsapp_router, prefix="", tags=["WhatsApp"])
