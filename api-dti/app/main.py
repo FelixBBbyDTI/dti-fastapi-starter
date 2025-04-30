@@ -40,3 +40,4 @@ app.include_router(deteccionincendio.router, prefix="/deteccionincendio", tags=[
 from app.whatsapp_bot import router as whatsapp_router
 app.include_router(whatsapp_router, prefix="/whatsapp", tags=["WhatsApp"])
 
+
