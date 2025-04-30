@@ -4,6 +4,5 @@ router = APIRouter()
 
 @router.post("/webhook")
 def recibir_mensaje():
-    return {"mensaje": "Webhook recibido correctamente"}
-
+    return {"message": "Hola desde WhatsApp"}
 
